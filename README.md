@@ -42,32 +42,6 @@ Containerize the application using **Docker** for ease of deployment and scaling
 Use any relational database of your choice for storing data.
 
 ---
-
-## API Endpoints
-
-### Admin Endpoints
-| Endpoint                     | Method   | Description                           |
-|------------------------------|----------|---------------------------------------|
-| `/admin/grocery`             | POST     | Add new grocery item                  |
-| `/admin/grocery`             | GET      | View all grocery items                |
-| `/admin/grocery/:id`         | PUT      | Update details of a grocery item      |
-| `/admin/grocery/:id`         | DELETE   | Remove a grocery item (soft delete)   |
-| `/admin/grocery/inventory`   | PATCH    | Manage inventory levels of grocery items |
-
-### User Endpoints
-| Endpoint                     | Method   | Description                           |
-|------------------------------|----------|---------------------------------------|
-| `/user/grocery`              | GET      | View available grocery items          |
-| `/user/order`                | POST     | Book multiple grocery items in  order |
-
-### Auth Endpoints
-| Endpoint                     | Method   | Description                           |
-|------------------------------|----------|---------------------------------------|
-| `/auth/register`             | POST     | Register admin/user                         |
-| `/auth/login`                | POST     | Login admin/user                            |
-
----
-
 ## How to Submit the Code
 1. Create a new GitHub repository with the name: **qp-assessment**.
 2. Once the code is complete, submit the GitHub repository link via the designated URL.
@@ -162,4 +136,29 @@ qp-assessment/
    ```bash
    docker run -p <host_port>:<container_port> qp-assessment
    ```
+---
+
+## API Endpoints
+
+### Admin Endpoints
+| Endpoint                     | Method   | Description                           |
+|------------------------------|----------|---------------------------------------|
+| `/admin/grocery`             | POST     | Add new grocery item                  |
+| `/admin/grocery`             | GET      | View all grocery items                |
+| `/admin/grocery/:id`         | PUT      | Update details of a grocery item      |
+| `/admin/grocery/:id`         | DELETE   | Remove a grocery item (soft delete)   |
+| `/admin/grocery/inventory`   | PATCH    | Manage inventory levels of grocery items |
+
+### User Endpoints
+| Endpoint                     | Method   | Description                           |
+|------------------------------|----------|---------------------------------------|
+| `/user/grocery`              | GET      | View available grocery items          |
+| `/user/order`                | POST     | Book multiple grocery items in  order |
+
+### Auth Endpoints
+| Endpoint                     | Method   | Description                           |
+|------------------------------|----------|---------------------------------------|
+| `/auth/register`             | POST     | Register admin/user                         |
+| `/auth/login`                | POST     | Login admin/user                            |
+
 ---
