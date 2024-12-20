@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",      // Compiled .js files go into the 'dist' folder
+    "rootDir": "./src",      // Source .ts files are located in the 'src' folder
+    "moduleResolution": "node",
+    "target": "ES6",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": ".",                  // Set the base directory for module resolution
+    "paths": {
+      "mysql2/promise": ["node_modules/mysql2/promise"]
+    },
+    "allowSyntheticDefaultImports": true, 
+    "resolveJsonModule": true,                                /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+  },
+  "include": ["src/**/*"],   // Only compile files in the 'src' folder
+  "exclude": ["node_modules", "dist"] ,// Exclude these folders from compilation
+}

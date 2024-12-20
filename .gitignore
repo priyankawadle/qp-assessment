@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+# dotenv environment variable files
+.env
+# Ignore JavaScript files in the project root
+*.js
+# Ignore compiled output folder
+dist/
